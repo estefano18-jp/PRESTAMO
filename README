@@ -1,0 +1,27 @@
+# Sistema de Préstamos
+
+Este proyecto es un **Sistema de Préstamos** desarrollado en PHP con Bootstrap para la interfaz. Permite gestionar beneficiarios, contratos de préstamos y pagos de manera sencilla y eficiente.
+
+---
+
+## Funcionalidades principales
+
+- **Gestión de Beneficiarios:** Registro, listado y validación para evitar duplicados por DNI.
+- **Administración de Contratos:** Creación de contratos con cálculo automático de cuotas e intereses.
+- **Control de Pagos:** Registro y actualización de pagos, cálculo de penalidades y seguimiento del estado del contrato.
+- **Dashboard:** Vista general con estadísticas rápidas y botones para navegar entre módulos.
+- **Interfaz Responsive:** Usando Bootstrap 5 para adaptarse a diferentes dispositivos.
+- **Animaciones y Efectos:** Animaciones suaves para mejorar la experiencia de usuario.
+
+---
+
+## Instalación y Configuración
+
+Sigue estos pasos para instalar y ejecutar el proyecto localmente en Visual Studio Code:
+
+### 1. Clonar el repositorio
+
+Abre una terminal en tu computadora y ejecuta:
+
+```bash
+git clone https://github.com/estefano18-jp/PRESTAMO.git
