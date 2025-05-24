@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Permitir acceso a archivos existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rutas para beneficiarios
+RewriteRule ^beneficiarios/?$ BeneficiariosController.php [L]
+RewriteRule ^beneficiarios/([0-9]+)/?$ BeneficiariosController.php?id=$1 [L]
+
+# Rutas para contratos
+RewriteRule ^contratos/?$ ContratosController.php [L]
+RewriteRule ^contratos/activos/?$ ContratosController.php?activos=1 [L]
+RewriteRule ^contratos/([0-9]+)/?$ ContratosController.php?id=$1 [L]
+
+# Rutas para pagos
+RewriteRule ^pagos/?$ PagosController.php [L]
+RewriteRule ^pagos/contrato/([0-9]+)/?$ PagosController.php?idcontrato=$1 [L]

@@ -25,3 +25,32 @@ Abre una terminal en tu computadora y ejecuta:
 
 ```bash
 git clone https://github.com/estefano18-jp/PRESTAMO.git
+
+
+
+# Listar todos
+GET http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php
+###
+# Obtener uno
+GET http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php?id=1
+###
+# Crear
+POST http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php
+###
+
+# Listar todos
+GET http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php
+###
+# Solo activos
+GET http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php?activos=1
+###
+# Crear
+POST http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php
+###
+
+# Listar por contrato
+GET http://localhost/REST-API-PRESTAMOS/app/controller/PagosController.php?idcontrato=1
+###
+# Registrar pago
+POST http://localhost/REST-API-PRESTAMOS/app/controller/PagosController.php
+###
