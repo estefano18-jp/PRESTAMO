@@ -13,14 +13,6 @@ git clone https://github.com/estefano18-jp/PRESTAMO.git
 
 Sigue estos pasos para instalar y ejecutar el proyecto localmente en Visual Studio Code:
 
-### 1. Clonar el repositorio
-
-Abre una terminal en tu computadora y ejecuta:
-
-bash
-git clone https://github.com/estefano18-jp/PRESTAMO.git
-```
-
 
 # Listar todos
 GET http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php
