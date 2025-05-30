@@ -1,19 +1,13 @@
-# Sistema de Préstamos
+# Sistema de Préstamos Web
+## Procedimientos para implementación
+1. Clonar Repositorio
+```
+git clone https://github.com/estefano18-jp/PRESTAMO.git
+```
 
-Este proyecto es un **Sistema de Préstamos** desarrollado en PHP con Bootstrap para la interfaz. Permite gestionar beneficiarios, contratos de préstamos y pagos de manera sencilla y eficiente.
 
----
-
-## Funcionalidades principales
-
-- **Gestión de Beneficiarios:** Registro, listado y validación para evitar duplicados por DNI.
-- **Administración de Contratos:** Creación de contratos con cálculo automático de cuotas e intereses.
-- **Control de Pagos:** Registro y actualización de pagos, cálculo de penalidades y seguimiento del estado del contrato.
-- **Dashboard:** Vista general con estadísticas rápidas y botones para navegar entre módulos.
-- **Interfaz Responsive:** Usando Bootstrap 5 para adaptarse a diferentes dispositivos.
-- **Animaciones y Efectos:** Animaciones suaves para mejorar la experiencia de usuario.
-
----
+2. Configurar conexión a base de datos en app/models/Conexion.php
+```php
 
 ## Instalación y Configuración
 
@@ -23,34 +17,34 @@ Sigue estos pasos para instalar y ejecutar el proyecto localmente en Visual Stud
 
 Abre una terminal en tu computadora y ejecuta:
 
-```bash
+bash
 git clone https://github.com/estefano18-jp/PRESTAMO.git
-
+```
 
 
 # Listar todos
 GET http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php
-###
+```
 # Obtener uno
 GET http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php?id=1
-###
+```
 # Crear
 POST http://localhost/REST-API-PRESTAMOS/app/controller/BeneficiariosController.php
-###
+```
 
 # Listar todos
 GET http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php
-###
+```
 # Solo activos
 GET http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php?activos=1
-###
+```
 # Crear
 POST http://localhost/REST-API-PRESTAMOS/app/controller/ContratosController.php
-###
+```
 
 # Listar por contrato
 GET http://localhost/REST-API-PRESTAMOS/app/controller/PagosController.php?idcontrato=1
-###
+```
 # Registrar pago
 POST http://localhost/REST-API-PRESTAMOS/app/controller/PagosController.php
-###
+```

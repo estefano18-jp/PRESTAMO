@@ -1,8 +1,13 @@
 <?php
+// Permite el acceso desde cualquier origen (CORS abierto para desarrollo o APIs públicas)
 header("Access-Control-Allow-Origin: *");
+// Indica que la respuesta será en formato JSON y con codificación UTF-8
 header("Content-Type: application/json; charset=UTF-8");
+// Especifica los métodos HTTP permitidos para esta API (POST y GET)
 header("Access-Control-Allow-Methods: POST, GET");
+// Indica cuánto tiempo (en segundos) el navegador puede cachear la respuesta de preflight (opciones CORS)
 header("Access-Control-Max-Age: 3600");
+// Define los encabezados permitidos en las solicitudes a esta API
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
 require_once '../../db/database.php';

@@ -1,6 +1,7 @@
 <?php
-require_once 'db/database.php';
-
+// Incluye el archivo de conexión a la base de datos
+require_once '../../db/database.php';
+// Verificar si la solicitud es POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $database = new Database();
     $db = $database->getConnection();

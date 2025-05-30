@@ -1,0 +1,108 @@
+/* Estilos personalizados para beneficiarios.php */
+
+/* Fondo general */
+body {
+    background: #585a5f;
+}
+
+/* Tarjetas personalizadas */
+.card-custom {
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(44, 62, 80, 0.08);
+    border: none;
+    margin-bottom: 24px;
+}
+
+/* Encabezado de tarjeta */
+.card-header.bg-primary {
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+}
+
+/* Botón personalizado */
+.btn-custom {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-custom:hover {
+    background: #e9ecef;
+}
+
+/* Título de bienvenida */
+.welcome-title {
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+/* Tabla de beneficiarios */
+.table-hover tbody tr:hover {
+    background-color: #eaf1fb;
+}
+
+.table-dark th {
+    background-color: #2c3e50 !important;
+    color: #fff;
+}
+
+/* Badge de estado (si se usa en el futuro) */
+.badge-estado {
+    padding: 0.5em 1em;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+.badge-activo {
+    background: #28a745;
+    color: #fff;
+}
+.badge-finalizado {
+    background: #6c757d;
+    color: #fff;
+}
+.badge-suspendido {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* Modal */
+.modal-header.bg-primary {
+    background: linear-gradient(90deg, #007bff 60%, #0056b3 100%);
+    color: #fff;
+    border-radius: 16px 16px 0 0;
+}
+
+/* Inputs y labels */
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.15);
+}
+
+/* Alertas */
+.alert-success {
+    background: #eafaf1;
+    color: #218838;
+    border: 1px solid #b7e4c7;
+}
+
+.alert-danger {
+    background: #fff4f4;
+    color: #c82333;
+    border: 1px solid #f5c6cb;
+}
+
+/* Responsive para tarjetas y tablas */
+@media (max-width: 768px) {
+    .card-custom {
+        margin-bottom: 16px;
+    }
+    .welcome-title {
+        font-size: 2rem;
+    }
+}

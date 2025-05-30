@@ -1,5 +1,6 @@
 <?php
-require_once 'db/database.php';
+// Incluye el archivo de conexión a la base de datos
+require_once '../../db/database.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $database = new Database();

@@ -1,18 +1,30 @@
+# Activa el motor de reescritura de URLs de Apache
 RewriteEngine On
 
-# Permitir acceso a archivos existentes
+# Permite el acceso directo a archivos y directorios existentes (no aplica reglas si el archivo o carpeta existe)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Rutas para beneficiarios
-RewriteRule ^beneficiarios/?$ BeneficiariosController.php [L]
+# Rutas amigables para beneficiarios
+RewriteRule ^beneficiarios/?$ BeneficiariosController.php [L] 
+# Si la URL es /beneficiarios o /beneficiarios/ llama a BeneficiariosController.php
+
 RewriteRule ^beneficiarios/([0-9]+)/?$ BeneficiariosController.php?id=$1 [L]
+# Si la URL es /beneficiarios/123 llama a BeneficiariosController.php?id=123
 
-# Rutas para contratos
+# Rutas amigables para contratos
 RewriteRule ^contratos/?$ ContratosController.php [L]
-RewriteRule ^contratos/activos/?$ ContratosController.php?activos=1 [L]
-RewriteRule ^contratos/([0-9]+)/?$ ContratosController.php?id=$1 [L]
+# Si la URL es /contratos o /contratos/ llama a ContratosController.php
 
-# Rutas para pagos
+RewriteRule ^contratos/activos/?$ ContratosController.php?activos=1 [L]
+# Si la URL es /contratos/activos o /contratos/activos/ llama a ContratosController.php?activos=1
+
+RewriteRule ^contratos/([0-9]+)/?$ ContratosController.php?id=$1 [L]
+# Si la URL es /contratos/123 llama a ContratosController.php?id=123
+
+# Rutas amigables para pagos
 RewriteRule ^pagos/?$ PagosController.php [L]
+# Si la URL es /pagos o /pagos/ llama a PagosController.php
+
 RewriteRule ^pagos/contrato/([0-9]+)/?$ PagosController.php?idcontrato=$1 [L]
+# Si la URL es /pagos/contrato/123 llama a PagosController.php?idcontrato=123
